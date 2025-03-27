@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-size: 50%;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    transition: background-image 1s ease-in-out;
+}
+
+nav {
+    background-color: #097287;
+    overflow: hidden;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    border-radius: 150px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:#b0f4ee;
+    color: black;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+
+.contenido p {
+    text-align: justify;
+}
+
+.contenido h1 {
+    color: #fc8f03 ;
+}
+
+footer {
+    background-color: #097287;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
