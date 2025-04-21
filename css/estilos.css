@@ -2,18 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
+  
 }
 
 /* ----- BODY ----- */
 body {
   background: #fff;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px; /* Tamaño base más pequeño para móviles */
+  font-size: 14px;
 }
 
 /* ----- Contenedor ----- */
 .contenedor {
-  width: 95%; /* Más ancho en móviles */
+  width: 95%;
   max-width: 1000px;
   margin: auto;
   overflow: hidden; 
@@ -31,7 +32,7 @@ header {
 /* Menu header */
 header .menu {
   margin: 20px 0;
-  text-align: center; /* Centrado en móviles */
+  text-align: center;
   padding: 0 10px;
 }
 
@@ -55,7 +56,7 @@ header .contenedor-texto {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px 0; /* Menos margen en móviles */
+  margin: 100px 0;
   padding: 0 15px;
   font-family: Arial;
 }
@@ -92,7 +93,7 @@ header .contenedor-texto .texto .profesion {
 }
 
 .main .acerca-de .foto {
-  margin-top: -80px; /* Ajuste para móviles */
+  margin-top: -80px;
 }
 
 .main .acerca-de .foto img {
@@ -108,7 +109,7 @@ header .contenedor-texto .texto .profesion {
   font-weight: 600;
   font-size: 1em;
   line-height: 1.6;
-  width: 95%; /* Más ancho en móviles */
+  width: 95%;
   margin: 30px auto 40px auto;
 }
 
@@ -150,12 +151,12 @@ header .contenedor-texto .texto .profesion {
 .main .trabajos .contenedor-trabajos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centrado en móviles */
+  justify-content: center;
   gap: 15px;
 }
 
 .main .trabajos .contenedor-trabajos .trabajo {
-  width: 100%; /* Una columna en móviles */
+  width: 100%;
   margin-bottom: 25px;
   border: 1px solid #ddd;
   padding: 15px;
@@ -205,79 +206,63 @@ header .contenedor-texto .texto .profesion {
   margin-bottom: 12px;
 }
 
-.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria a {
-  color: #dd820d;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria a:hover {
-  color: #3895ea;
-  text-decoration: underline;
-}
-
-/* ----- FORMULARIO ----- */
-.formulario {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.formulario input[type="text"], 
-.formulario input[type="email"], 
-.formulario textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
-  transition: border-color 0.3s ease;
-}
-
-.formulario input[type="text"]:focus, 
-.formulario input[type="email"]:focus, 
-.formulario textarea:focus {
-  border-color: #3895ea;
-  outline: none;
-}
-
-.formulario textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.formulario .boton {
-  padding: 12px 20px;
-  background-color: #323068;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.formulario .boton:hover {
-  background-color: #dd820d;
-}
-
-/* ----- CONTACTO ----- */
-.contacto {
-  margin-bottom: 40px;
-  padding-top: 40px;
-}
-
-.contacto .titulo {
-  font-size: 2em;
-  line-height: 1.2;
-  margin-bottom: 25px;
-  font-weight: 300;
-  color: #323068;
+/* Nuevo div de Clases a Distancia */
+.clases-distancia {
+  background: linear-gradient(135deg, #dd820d, #ff9e1b);
+  color: white;
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 10px;
   text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.clases-distancia::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  transform: rotate(30deg);
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) rotate(30deg); }
+  100% { transform: translateX(100%) rotate(30deg); }
+}
+
+.clases-distancia h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.clases-distancia p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.clases-distancia .boton {
+  display: inline-block;
+  background: white;
+  color: #dd820d;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.clases-distancia .boton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* ----- FOOTER ----- */
@@ -291,6 +276,7 @@ footer .redes-sociales .contenedor {
   justify-content: center;
 }
 
+/* Cambiado de Facebook a Classroom */
 footer .redes-sociales .contenedor a {
   color: #fff;
   text-align: center;
@@ -304,18 +290,25 @@ footer .redes-sociales .contenedor a {
   margin: 0 10px;
   border-radius: 50%;
   transition: all 0.3s ease;
+  background: #FFA726; /* Color naranja de Classroom */
 }
 
 footer .redes-sociales .contenedor a:hover {
-  background: #3b5998;
+  background: #FB8C00; /* Color naranja más oscuro */
   transform: translateY(-3px);
+}
+
+/* Icono de Classroom (usando el icono de graduación como aproximación) */
+footer .redes-sociales .contenedor a::before {
+  content: "\f19d"; /* Código del icono de graduación en Font Awesome */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
 }
 
 /* ==================== */
 /* MEDIA QUERIES */
 /* ==================== */
 
-/* Tablet (600px en adelante) */
 @media screen and (min-width: 600px) {
   body {
     font-size: 15px;
@@ -337,15 +330,18 @@ footer .redes-sociales .contenedor a:hover {
   }
   
   .main .trabajos .contenedor-trabajos .trabajo {
-    width: calc(50% - 20px); /* 2 columnas */
+    width: calc(50% - 20px);
   }
   
   .main .acerca-de .texto {
     width: 85%;
   }
+  
+  .clases-distancia {
+    padding: 40px;
+  }
 }
 
-/* Tablet grande (768px en adelante) */
 @media screen and (min-width: 768px) {
   .contenedor {
     width: 90%;
@@ -377,9 +373,16 @@ footer .redes-sociales .contenedor a:hover {
     height: 60px;
     font-size: 2em;
   }
+  
+  .clases-distancia {
+    padding: 50px;
+  }
+  
+  .clases-distancia h2 {
+    font-size: 2.5em;
+  }
 }
 
-/* Escritorio (992px en adelante) */
 @media screen and (min-width: 992px) {
   body {
     font-size: 16px;
@@ -390,19 +393,18 @@ footer .redes-sociales .contenedor a:hover {
   }
   
   .main .trabajos .contenedor-trabajos .trabajo {
-    width: calc(25% - 20px); /* 4 columnas */
+    width: calc(25% - 20px);
   }
   
   .main .acerca-de .texto {
     width: 80%;
   }
   
-  .formulario {
-    padding: 0;
+  .clases-distancia {
+    margin: 60px 0;
   }
 }
 
-/* Pantallas grandes (1200px en adelante) */
 @media screen and (min-width: 1200px) {
   .main .trabajos {
     padding: 60px 0;
@@ -411,5 +413,8 @@ footer .redes-sociales .contenedor a:hover {
   .main .trabajos .titulo {
     margin-bottom: 60px;
   }
+  
+  .clases-distancia {
+    padding: 60px;
+  }
 }
-
