@@ -51,6 +51,88 @@ header .menu a:hover {
   border-bottom: 2px solid #fff; 
 }
 
+
+
+/* Sección Misión, Visión y Objetivos */
+.mision-vision {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  padding: 60px 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.valores-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.valor-card {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.valor-icon {
+  font-size: 2.5rem;
+  color: #dd820d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.valor-card h2 {
+  color: #323068;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.valor-texto p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.valor-texto ul {
+  padding-left: 20px;
+}
+
+.valor-texto li {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .valores-container {
+    flex-direction: column;
+  }
+  
+  .valor-card {
+    min-width: 100%;
+  }
+  
+  .mision-vision {
+    padding: 40px 0;
+  }
+}
+
+
+
+
 /* Texto header */
 header .contenedor-texto {
   display: flex;
