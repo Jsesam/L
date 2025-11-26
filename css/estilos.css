@@ -633,17 +633,60 @@ body {
     opacity: 1;
 }
 
-/* RESPONSIVE */
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 50px;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-slider {
+        width: 420px;
+        height: 450px;
+    }
+}
+
+/* Celulares grandes */
 @media (max-width: 900px) {
     .hero {
         flex-direction: column;
         text-align: center;
+        padding: 40px 20px;
+    }
+
+    .buttons {
+        justify-content: center;
     }
 
     .hero-slider {
-        margin-top: 40px;
+        margin-top: 30px;
         width: 90%;
-        height: 280px;
+        height: 300px;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-slider {
+        height: 230px;
     }
 }
 
