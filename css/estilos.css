@@ -533,16 +533,17 @@ body {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #fafafa;
+    background: #fafafa; /* Fondo claro, NO celeste */
 }
 
+/* HERO */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px;
-    background: linear-gradient(90deg, #fff4ec, #ffffff);
-     gap: 40px;
+    background: linear-gradient(90deg, #fff4ec, #ffffff); /* Degradado original */
+    gap: 40px;
 }
 
 .hero-text {
@@ -557,11 +558,11 @@ body {
 }
 
 .accent {
-    color: #f37a29;
+    color: #f37a29; /* Naranja principal */
 }
 
 .badge {
-    background: #ffe6d1;
+    background: #ffe6d1; /* Naranja suave */
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 14px;
@@ -574,6 +575,7 @@ body {
     margin-bottom: 30px;
 }
 
+/* BOTONES */
 .buttons {
     display: flex;
     gap: 20px;
@@ -587,9 +589,8 @@ body {
     white-space: nowrap;
 }
 
-
 .btn-primary {
-    background:#005BBB;
+    background: #005BBB; /* Azul principal que combina con el naranja */
     color: white;
     padding: 15px 25px;
     border-radius: 50px;
@@ -600,15 +601,11 @@ body {
 .btn-secondary i {
     margin-right: 10px;
     font-size: 20px;
+    color: #25D366; /* Verde WhatsApp */
 }
-.btn-secondary i {
-    color: #25D366; /* verde WhatsApp */
-}
-
-
 
 .btn-secondary {
-     padding: 15px 25px;
+    padding: 15px 25px;
     border-radius: 50px;
     border: 2px solid #1e1e1e;
     text-decoration: none;
