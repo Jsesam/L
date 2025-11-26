@@ -10,6 +10,7 @@ body {
   background: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  text-align: justify;
 }
 
 /* ----- Contenedor ----- */
@@ -698,5 +699,6 @@ footer .redes-sociales .contenedor a::before {
         aspect-ratio: 3/4;
     }
 }
+
 
 
