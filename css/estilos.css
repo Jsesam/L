@@ -535,7 +535,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 80px;
-    background: linear-gradient(90deg, #fff4ec, #ffffff);
+    background:#FF8C00;
      gap: 40px;
 }
 
@@ -645,3 +645,4 @@ body {
         height: 280px;
     }
 }
+
