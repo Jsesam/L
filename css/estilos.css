@@ -525,11 +525,9 @@ footer .redes-sociales .contenedor a::before {
 }
 
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fafafa;
-}
+
+
+
 
 .hero {
     display: flex;
@@ -613,8 +611,10 @@ body {
 
 /* SLIDER */
 .hero-slider {
-    width: 510px;
-    height: 540px;
+    width: 100%;
+    max-width: 450px;     /* Para que no sea demasiado grande en PC */
+    height: auto;
+    aspect-ratio: 3/4;    /* Mantiene proporción vertical bonita */
     position: relative;
     overflow: hidden;
     border-radius: 15px;
@@ -636,8 +636,10 @@ body {
 /* Tablets y pantallas medianas */
 @media (max-width: 1024px) {
     .hero {
-        padding: 50px;
-        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        gap: 20px;
     }
 
     .hero-text h1 {
@@ -645,8 +647,11 @@ body {
     }
 
     .hero-slider {
-        width: 420px;
-        height: 450px;
+       width: 90%;
+        max-width: 350px;
+        aspect-ratio: 3/4;
+        height: auto;
+        margin-top: 20px;
     }
 }
 
@@ -665,7 +670,10 @@ body {
     .hero-slider {
         margin-top: 30px;
         width: 90%;
-        height: 300px;
+        height: auto;
+        max-widh:320px; 
+      aspect-ratio:3/4;
+      
     }
 }
 
@@ -686,7 +694,9 @@ body {
     }
 
     .hero-slider {
-        height: 230px;
+       max-width: 280px;
+        aspect-ratio: 3/4;
     }
 }
+
 
