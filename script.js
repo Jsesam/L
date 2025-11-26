@@ -1,0 +1,10 @@
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function cambiarSlide() {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}
+
+setInterval(cambiarSlide, 2000);
