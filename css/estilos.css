@@ -530,12 +530,18 @@ body {
     background: #fafafa;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+}
+
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px;
-    background:#FF8C00;
+    background: linear-gradient(90deg, #fff4ec, #ffffff);
      gap: 40px;
 }
 
@@ -645,4 +651,3 @@ body {
         height: 280px;
     }
 }
-
