@@ -652,11 +652,8 @@ footer .redes-sociales .contenedor a::before {
 /* --------------------------- */
 /*         SLIDER              */
 /* --------------------------- */
-
 .hero-slider {
-    flex: 1;
     width: 100%;
-    max-width: 450px;
     aspect-ratio: 3 / 4;
     height: auto;
     position: relative;
@@ -697,7 +694,8 @@ footer .redes-sociales .contenedor a::before {
     }
 
     .hero-slider {
-        max-width: 350px;
+        width: 100% !important;
+        max-width: none !important; /* <-- CORRECCIÓN */
         order: 1;
     }
 
@@ -718,7 +716,8 @@ footer .redes-sociales .contenedor a::before {
     }
 
     .hero-slider {
-        max-width: 300px;
+        width: 100% !important;
+        max-width: none !important; /* <-- CORRECCIÓN */
     }
 
     .hero-text {
@@ -746,7 +745,8 @@ footer .redes-sociales .contenedor a::before {
 
 @media (max-width: 480px) {
     .hero-slider {
-        max-width: 260px;
+        width: 100% !important;
+        max-width: none !important; /* <-- CORRECCIÓN */
     }
 
     .hero-text h1 {
