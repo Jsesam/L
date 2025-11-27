@@ -720,38 +720,60 @@ body {
     }
 }
 
-/* MÓVILES PEQUEÑOS */
-/* Mejor visibilidad del slider en teléfono */
+
+
+
+
+/* SLIDER */
+.hero-slider {
+    width: 100%;
+    max-width: 450px;   /* para laptop y PC */
+    aspect-ratio: 3/4;  /* mantiene proporción vertical */
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* Cada diapositiva */
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: cover;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+
+
+
+
+
+/* RESPONSIVE TABLETS */
+@media (max-width: 1024px) {
+    .hero-slider {
+        max-width: 350px;
+        aspect-ratio: 3/4;
+    }
+}
+
+/* RESPONSIVE CELULARES GRANDES */
 @media (max-width: 768px) {
-    .galeriaa.hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .hero-slider {
-        width: 100%;
-        height: 380px;
-    }
-
-    .hero-slider .slide {
-        object-fit: contain;
-        background: #fff4ec;
+        max-width: 300px;
+        aspect-ratio: 3/4;
     }
 }
 
-
-/* EXTRA SMALL */
-@media (max-width: 360px) {
+/* RESPONSIVE CELULARES PEQUEÑOS */
+@media (max-width: 480px) {
     .hero-slider {
-        height: 200px;
-    }
-    
-    .hero-text h1 {
-        font-size: 1.6rem;
-    }
-    
-    .hero-text {
-        padding: 1rem;
+        max-width: 260px;
+        aspect-ratio: 3/4;
     }
 }
-
