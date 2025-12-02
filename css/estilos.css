@@ -130,66 +130,61 @@ header .contenedor-texto .texto .profesion {
 }
 
 
-/* Sección Misión, Visión y Objetivos */
+
+
+
+
+
+/* ====================================== */
+/*          MISIÓN Y VISIÓN              */
+/* ====================================== */
+
 .mision-vision {
-   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
-  padding: 60px 0;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
+    padding: 80px 0;
+    background:;
 }
 
 .valores-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .valor-card {
-  flex: 1;
-  min-width: 300px;
-  background: white;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 380px;
+    background: rgba(255, 230, 209, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .valor-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
 
 .valor-icon {
-  font-size: 2.5rem;
-  color: #dd820d;
-  margin-bottom: 20px;
-  text-align: center;
+    font-size: 3rem;
+    color: #f37a29;
+    margin-bottom: 1rem;
 }
 
 .valor-card h2 {
-  color: #323068;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: 600;
+    text-align: center;
+    color: #d36a1c;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
-.valor-texto p {
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 0;
-  text-align: justify;
-}
-
-.valor-texto ul {
-  padding-left: 20px;
-}
-
+.valor-texto p,
 .valor-texto li {
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.8;
 }
 
 /* Responsive */
@@ -780,4 +775,5 @@ footer .redes-sociales .contenedor a::before {
         padding: 0.4rem 0.8rem;
     }
 }
+
 
