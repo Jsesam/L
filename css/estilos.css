@@ -672,9 +672,32 @@ footer .redes-sociales .contenedor a::before {
     opacity: 1;
 }
 
+
+/* ====================================== */
+/*     AJUSTE SOLO PARA COMPUTADORAS      */
+/* ====================================== */
+
+@media (min-width: 1025px) {
+
+    .hero-slider {
+        width: 450px;
+        max-width: 450px;
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+
 /* ====================================== */
 /*        RESPONSIVE - TABLETS            */
 /* ====================================== */
+
 
 @media (max-width: 1024px) {
 
@@ -757,3 +780,4 @@ footer .redes-sociales .contenedor a::before {
         padding: 0.4rem 0.8rem;
     }
 }
+
